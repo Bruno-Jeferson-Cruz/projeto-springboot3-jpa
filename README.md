@@ -8,6 +8,10 @@
 
 Este projeto é um sistema de controle de pedidos desenvolvido em Java utilizando JPA, Hibernate, e H2 como banco de dados em memória. Ele fornece endpoints para inserção, exclusão e atualização de pedidos, usuários e produtos.
 
+## Projeto:
+
+![imagem_2024-05-06_165602130](https://github.com/Bruno-Jeferson-Cruz/projeto-springboot3-jpa/assets/108185881/0f280b23-0917-437b-b3f8-df0b8045dc56)
+
 ## Tecnologias Utilizadas
 
 - Java
