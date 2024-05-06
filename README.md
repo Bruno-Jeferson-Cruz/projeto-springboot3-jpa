@@ -1,4 +1,10 @@
 # Controle de Pedidos de Loja
+![GitHub License](https://img.shields.io/github/license/Bruno-Jeferson-Cruz/projeto-springboot3-jpa)
+
+
+
+## Sobre o projeto
+
 
 Este projeto é um sistema de controle de pedidos desenvolvido em Java utilizando JPA, Hibernate, e H2 como banco de dados em memória. Ele fornece endpoints para inserção, exclusão e atualização de pedidos, usuários e produtos.
 
@@ -38,3 +44,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, repo
 ## Autor
 
 Bruno Cruz - https://github.com/Bruno-Jeferson-Cruz
+
+## Licença
+
+https://github.com/Bruno-Jeferson-Cruz/projeto-springboot3-jpa/blob/main/LICENSE
