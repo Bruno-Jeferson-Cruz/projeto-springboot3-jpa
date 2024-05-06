@@ -3,6 +3,7 @@ package com.brunocruz.estudos.entities;
 import java.io.Serializable;
 import java.time.Instant;
 
+import com.brunocruz.estudos.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.Entity;
@@ -24,6 +25,8 @@ public class Order implements Serializable {
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'hh::mm:ss'Z'", timezone = "GMT")
 	private Instant moment;
 
+	private Integer orderStatus;
+
 	@ManyToOne
 	@JoinColumn(name = "client_id")
 	private User client;
@@ -32,11 +35,22 @@ public class Order implements Serializable {
 		super();
 	}
 
-	public Order(Long id, Instant moment, User client) {
+	public Order(Long id, Instant moment, User client, OrderStatus orderStatus) {
 		super();
+		setOrderStatus(orderStatus);
 		this.id = id;
 		this.moment = moment;
 		this.client = client;
+	}
+
+	public OrderStatus getOrderStatus() {
+		return OrderStatus.valueOf(orderStatus);
+	}
+
+	public void setOrderStatus(OrderStatus orderStatus) {
+		if (orderStatus != null) {
+			this.orderStatus = orderStatus.getCode();
+		}
 	}
 
 	public Long getId() {
